@@ -11,6 +11,7 @@
             background-color: #9c5bc1;
             color: #333;
             margin: 0;
+            padding: 0;
         }
         header {
             background-color: #efb3f3;
@@ -25,7 +26,7 @@
         .container {
             position: relative;
             width: 100%;
-            height: 1500px;
+            height: 1600px;
         }
         .food-item, .fun-facts {
             position: absolute;
@@ -39,12 +40,14 @@
             font-family: 'Lobster', cursive;
         }
         .food-item img {
-            max-width: 100%;
+            width: 100%;
+            height: auto;
             border-radius: 8px;
         }
         .food-item p {
             margin: 0.5em 0;
             font-size: 1.2em;
+            min-height: 3em; /* Ensure captions are not cut off */
         }
         .fun-facts {
             background-color: #d5b1da;
@@ -60,13 +63,13 @@
         #item1 { top: 100px; left: 50px; }
         #item2 { top: 100px; left: 400px; }
         #item3 { top: 100px; left: 750px; }
-        #item4 { top: 450px; left: 50px; }
-        #item5 { top: 450px; left: 400px; }
-        #item6 { top: 450px; left: 750px; }
+        #item4 { top: 500px; left: 50px; }
+        #item5 { top: 500px; left: 400px; }
+        #item6 { top: 500px; left: 750px; }
         /* Absolute positioning for the fun facts */
-        #fact1 { top: 850px; left: 50px; }
-        #fact2 { top: 850px; left: 400px; }
-        #fact3 { top: 850px; left: 750px; }
+        #fact1 { top: 950px; left: 50px; }
+        #fact2 { top: 950px; left: 400px; }
+        #fact3 { top: 950px; left: 750px; }
     </style>
 </head>
 <body>
