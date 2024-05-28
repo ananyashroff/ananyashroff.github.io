@@ -24,12 +24,12 @@
             position: relative;
         }
         .container {
-            position: relative;
-            width: 100%;
-            height: 1600px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
         .food-item, .fun-facts {
-            position: absolute;
             width: 300px;
             padding: 1em;
             border-radius: 8px;
@@ -41,7 +41,8 @@
         }
         .food-item img {
             width: 100%;
-            height: auto;
+            height: 200px; /* Ensure all images have the same height */
+            object-fit: cover;
             border-radius: 8px;
         }
         .food-item p {
@@ -51,6 +52,11 @@
         }
         .fun-facts {
             background-color: #d5b1da;
+            width: 300px;
+            padding: 1em;
+            border-radius: 8px;
+            margin: 20px;
+            text-align: center;
         }
         .fact {
             background-color: #ff007b;
@@ -59,17 +65,6 @@
             border-radius: 8px;
             font-weight: bold;
         }
-        /* Absolute positioning for the food items */
-        #item1 { top: 100px; left: 50px; }
-        #item2 { top: 100px; left: 400px; }
-        #item3 { top: 100px; left: 750px; }
-        #item4 { top: 500px; left: 50px; }
-        #item5 { top: 500px; left: 400px; }
-        #item6 { top: 500px; left: 750px; }
-        /* Absolute positioning for the fun facts */
-        #fact1 { top: 950px; left: 50px; }
-        #fact2 { top: 950px; left: 400px; }
-        #fact3 { top: 950px; left: 750px; }
     </style>
 </head>
 <body>
@@ -77,37 +72,37 @@
         Vegan Menu - Assignment 4B
     </header>
     <div class="container">
-        <div id="item1" class="food-item">
+        <div class="food-item">
             <img src="vegan-burger.jpg" alt="Delicious Vegan Burger">
             <p><strong>Vegan Burger:</strong> A juicy, flavorful patty made from plants. You'll never miss the meat!</p>
         </div>
-        <div id="item2" class="food-item">
+        <div class="food-item">
             <img src="vegan-pizza.jpg" alt="Tasty Vegan Pizza">
             <p><strong>Vegan Pizza:</strong> Loaded with fresh veggies and gooey vegan cheese. A slice of heaven!</p>
         </div>
-        <div id="item3" class="food-item">
+        <div class="food-item">
             <img src="vegan-salad.jpg" alt="Refreshing Vegan Salad">
             <p><strong>Vegan Salad:</strong> Crisp and refreshing, packed with nutrients and flavors.</p>
         </div>
-        <div id="item4" class="food-item">
+        <div class="food-item">
             <img src="vegan-pasta.jpg" alt="Hearty Vegan Pasta">
             <p><strong>Vegan Pasta:</strong> Savory pasta in a rich tomato sauce with fresh herbs and vegetables.</p>
         </div>
-        <div id="item5" class="food-item">
+        <div class="food-item">
             <img src="vegan-dessert.jpg" alt="Decadent Vegan Dessert">
             <p><strong>Vegan Dessert:</strong> A sweet treat made without any animal products. Simply divine!</p>
         </div>
-        <div id="item6" class="food-item">
+        <div class="food-item">
             <img src="vegan-smoothie.jpg" alt="Nutritious Vegan Smoothie">
             <p><strong>Vegan Smoothie:</strong> A blend of fruits and veggies for a refreshing, healthy drink.</p>
         </div>
-        <div id="fact1" class="fun-facts">
+        <div class="fun-facts">
             <div class="fact">Fact 1: Vegan diets can provide all the nutrients your body needs.</div>
         </div>
-        <div id="fact2" class="fun-facts">
+        <div class="fun-facts">
             <div class="fact">Fact 2: Switching to a plant-based diet can help reduce your carbon footprint.</div>
         </div>
-        <div id="fact3" class="fun-facts">
+        <div class="fun-facts">
             <div class="fact">Fact 3: Eating more plants can improve your overall health and well-being.</div>
         </div>
     </div>
