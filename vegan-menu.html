@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Menu - Assignment 4B</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Patrick+Hand&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #9c5bc1, #efb3f3);
@@ -28,27 +27,27 @@
         .container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             padding: 20px;
         }
         .food-item, .fun-facts {
             width: 300px;
             padding: 1em;
-            border-radius: 8px;
+            border-radius: 12px;
             background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             margin: 20px;
             text-align: center;
             font-family: 'Lobster', cursive;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .food-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         .food-item img {
             width: 100%;
-            height: 200px; /* Ensure all images have the same height */
+            height: 200px;
             object-fit: cover;
             border-radius: 8px;
             transition: box-shadow 0.3s;
@@ -59,18 +58,23 @@
         .food-item p {
             margin: 0.5em 0;
             font-size: 1.2em;
-            min-height: 3em; /* Ensure captions are not cut off */
+            min-height: 3em;
         }
         .fun-facts {
             background-color: #d5b1da;
             border: 2px solid #efb3f3;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             width: 300px;
             padding: 1em;
-            border-radius: 8px;
+            border-radius: 12px;
             margin: 20px;
             text-align: center;
             font-family: 'Patrick Hand', cursive;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .fun-facts:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         .fact {
             background-color: #ff007b;
@@ -100,7 +104,7 @@
         </div>
         <div class="food-item">
             <img src="vegan-pasta.jpg" alt="Hearty Vegan Pasta">
-            <p><strong>Vegan Pasta:</strong> Savory pasta in a rich alfredo sauce with fresh herbs and vegetables.</p>
+            <p><strong>Vegan Pasta:</strong> Savory pasta in a rich tomato sauce with fresh herbs and vegetables.</p>
         </div>
         <div class="food-item">
             <img src="vegan-dessert.jpg" alt="Decadent Vegan Dessert">
@@ -114,7 +118,7 @@
             <div class="fact">Fact 1: Vegan diets can provide all the nutrients you body needs and is proven to reduce the risk of cancer by 15%.</div>
         </div>
         <div class="fun-facts">
-            <div class="fact">Fact 2:  A plant-based diet can help reduce your carbon footprint as it uses 76% less land that animal products. .</div>
+            <div class="fact">Fact 2: A plant-based diet can help reduce your carbon footprint as it uses 76% less land that animal products.</div>
         </div>
         <div class="fun-facts">
             <div class="fact">Fact 3: Eating more plants can improve your overall mental health and well-being.</div>
