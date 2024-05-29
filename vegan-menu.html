@@ -6,9 +6,10 @@
     <title>Vegan Menu - Assignment 4B</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #9c5bc1;
+            background: linear-gradient(135deg, #9c5bc1, #efb3f3);
             color: #333;
             margin: 0;
             padding: 0;
@@ -22,6 +23,7 @@
             font-family: 'Lobster', cursive;
             border-bottom: 5px solid #333;
             position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         .container {
             display: flex;
@@ -38,12 +40,21 @@
             margin: 20px;
             text-align: center;
             font-family: 'Lobster', cursive;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .food-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .food-item img {
             width: 100%;
             height: 200px; /* Ensure all images have the same height */
             object-fit: cover;
             border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+        .food-item img:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
         }
         .food-item p {
             margin: 0.5em 0;
@@ -52,11 +63,14 @@
         }
         .fun-facts {
             background-color: #d5b1da;
+            border: 2px solid #efb3f3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
             padding: 1em;
             border-radius: 8px;
             margin: 20px;
             text-align: center;
+            font-family: 'Patrick Hand', cursive;
         }
         .fact {
             background-color: #ff007b;
@@ -69,7 +83,7 @@
 </head>
 <body>
     <header>
-        Vegan Menu - Assignment 4B
+        Vegan Menu 
     </header>
     <div class="container">
         <div class="food-item">
@@ -86,7 +100,7 @@
         </div>
         <div class="food-item">
             <img src="vegan-pasta.jpg" alt="Hearty Vegan Pasta">
-            <p><strong>Vegan Pasta:</strong> Savory pasta in a rich tomato sauce with fresh herbs and vegetables.</p>
+            <p><strong>Vegan Pasta:</strong> Savory pasta in a rich alfredo sauce with fresh herbs and vegetables.</p>
         </div>
         <div class="food-item">
             <img src="vegan-dessert.jpg" alt="Decadent Vegan Dessert">
@@ -97,13 +111,13 @@
             <p><strong>Vegan Smoothie:</strong> A blend of fruits and veggies for a refreshing, healthy drink.</p>
         </div>
         <div class="fun-facts">
-            <div class="fact">Fact 1: Vegan diets can provide all the nutrients your body needs.</div>
+            <div class="fact">Fact 1: Vegan diets can provide all the nutrients you body needs and is proven to reduce the risk of cancer by 15%.</div>
         </div>
         <div class="fun-facts">
-            <div class="fact">Fact 2: Switching to a plant-based diet can help reduce your carbon footprint.</div>
+            <div class="fact">Fact 2:  A plant-based diet can help reduce your carbon footprint as it uses 76% less land that animal products. .</div>
         </div>
         <div class="fun-facts">
-            <div class="fact">Fact 3: Eating more plants can improve your overall health and well-being.</div>
+            <div class="fact">Fact 3: Eating more plants can improve your overall mental health and well-being.</div>
         </div>
     </div>
 </body>
